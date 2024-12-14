@@ -1,0 +1,232 @@
+/* General styles */
+body {
+  width: 100%;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #000000; /* Terminal black */
+  color: #00FF41; /* Fallout green */
+  margin: 0;
+  padding: 0;
+}
+
+
+.App {
+  text-align: center;
+}
+
+/* Header and Navbar */
+.App-header {
+  background-color: #000000;
+  padding: 20px;
+  border-bottom: 2px solid #00FF41;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.navbar-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #00FF41;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #FFFFFF; /* Bright white for hover effect */
+}
+
+/* Section styling */
+section {
+  padding: 50px 20px;
+  border-top: 2px solid #00FF41;
+}
+
+h2 {
+  border-bottom: 2px solid #00FF41;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* About Me Button */
+.about-me-container {
+  margin: 20px;
+}
+
+.about-me-button {
+  background-color: #001F00;
+  border: 2px solid #00FF41;
+  color: #00FF41;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.about-me-button:hover {
+  background-color: #00FF41;
+  color: #000000;
+}
+
+.about-me-text {
+  display: none;
+  justify-content: center;
+  margin-top: 10px;
+  text-align: center;
+  padding: 10px;
+  background-color: #001F00;
+  border: none;
+  border-radius: 5px;
+}
+
+
+/* Project Cards */
+.project-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #001F00; /* Dark green background */
+  border: 1px solid #00FF41;
+  padding: 20px;
+  width: 250px;
+  border-radius: 5px;
+  color: #00FF41;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card a {
+  color: #00FF41;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Skills list */
+
+/* About Me Button */
+.skills-container {
+  margin: 20px;
+}
+
+.skills-button {
+  background-color: #001F00;
+  border: 2px solid #00FF41;
+  color: #00FF41;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.skills-button:hover {
+  background-color: #00FF41;
+  color: #000000;
+}
+
+.skills-text {
+  display: none;
+  margin-top: 10px;
+  text-align: left;
+  padding: 10px;
+  background-color: #001F00;
+  border: none;
+  border-radius: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin: 15px 0 5px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: #001F00;
+  border: 1px solid #00FF41;
+  color: #00FF41;
+  border-radius: 3px;
+}
+
+.contact-form button {
+  background-color: #00FF41;
+  border: none;
+  color: #000000;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.contact-form button:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+/* Footer */
+.App-footer {
+  background-color: #000000;
+  color: #00FF41;
+  padding: 10px 0;
+  border-top: 2px solid #00FF41;
+}
+
+
+/* Back to top button */
+.back-to-top {
+  position: fixed; /* Keep it in a fixed position on the screen */
+  bottom: 20px;    /* Position it at the bottom */
+  right: 20px;     /* Position it on the right */
+  padding: 10px 20px;
+  background-color: #007BFF; /* Example background color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease; /* Smooth transition */
+  opacity: 0; /* Start hidden */
+  visibility: hidden; /* Hidden by default */
+}
+
+.back-to-top.show {
+  opacity: 1; /* Fully visible */
+  visibility: visible; /* Make it visible */
+}
