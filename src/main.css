@@ -208,25 +208,3 @@ li {
   padding: 10px 0;
   border-top: 2px solid #00FF41;
 }
-
-
-/* Back to top button */
-.back-to-top {
-  position: fixed; /* Keep it in a fixed position on the screen */
-  bottom: 20px;    /* Position it at the bottom */
-  right: 20px;     /* Position it on the right */
-  padding: 10px 20px;
-  background-color: #007BFF; /* Example background color */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: opacity 0.3s ease; /* Smooth transition */
-  opacity: 0; /* Start hidden */
-  visibility: hidden; /* Hidden by default */
-}
-
-.back-to-top.show {
-  opacity: 1; /* Fully visible */
-  visibility: visible; /* Make it visible */
-}
