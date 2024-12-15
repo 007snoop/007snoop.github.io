@@ -3,32 +3,6 @@ import "./main.css";
 
 
 const App = () => {
-  const [showButton, setShowButton] = useState(false);
-
-	useEffect(() => {
-		const handleScroll = () => {
-			// Show button if scrolled more than 100px
-			if (window.scrollY > 50) {
-				setShowButton(true);
-			} else {
-				setShowButton(false);
-			}
-		};
-
-		window.addEventListener("scroll", handleScroll);
-
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-		};
-	}, []);
-
-	const scrollToTop = () => {
-		window.scrollTo({
-			top: 0,
-			behavior: "smooth",
-		});
-	};
-
 	return (
 		<div className="App">
 			<header className="App-header">
@@ -142,8 +116,6 @@ const App = () => {
 						<button type="submit">Send</button>
 					</form>
 				</section>
-				{showButton && ( <button id="backToTop" class="back-to-top" onClick={scrollToTop}>Back to Top
-				</button>)}
 			</main>
 
 			<footer className="App-footer">
