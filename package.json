@@ -3,7 +3,7 @@
 	"private": true,
 	"version": "0.1.2",
 	"type": "module",
-	"homepage": "https://007snoop.github.io/my-portfolio",
+	"homepage": "https://007snoop.github.io/",
 	"scripts": {
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d dist",
